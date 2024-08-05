@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+End of css reset
+*/
+
+:root {
+    --red: rgb(167, 0, 0);
+    --porcelain: #ffe3e3;
+    --porcelainDarkened: #d8c1c1;
+    --green: green;
+    --darkGreen: rgb(0, 77, 0);
+    --orange: orange;
+    --gray: rgb(46, 46, 46);
+}
+
+header {
+    background-color: var(--red);
+    height: 80px;
+    box-shadow: 0px 10px 18px -3px rgba(0,0,0,0.75);
+}
+
+#logo {
+    height: 100%;
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+nav {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    button {
+        height: 100%;
+        width: 150px;
+        border-radius: 0;
+        border-width: 0;
+        background-color: var(--porcelain);
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: var(--porcelainDarkened);
+    }
+}
+
+#content {
+    height: 100%;
+}
+
+#firstBlock {
+    background-color: var(--orange);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#firstBlock #firstLeft {
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: var(--gray);
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+
+
+    #btnGroup button {
+        border: none;
+        padding: 13px;
+        font-size: 1.3rem;
+        border-radius: 30px;
+    }
+
+    button:first-child {
+        background-color: var(--green);
+    }
+
+    button:first-child:hover {
+        background-color: var(--darkGreen);
+    }
+
+    #btnGroup button:nth-child(2){
+        background-color: var(--porcelain);
+        border: 3px solid brown;
+    }
+
+    #btnGroup button:nth-child(2):hover{
+        background-color: var(--porcelainDarkened);
+    }
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(4n-3) {
+    color: var(--red);
+    font-size: 20px;
+    text-align: center;
+}
+
+tr:not(:nth-child(4n-3)) {
+    text-align: center;
+}
+
+body {
+    background-color: var(--orange);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 20px;
+}

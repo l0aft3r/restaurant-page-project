@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-page-project",
+  "version": "1.0.0",
+  "description": "A restaurant page project I built while doing the odin-project course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l0aft3r/restaurant-page-project.git"
+  },
+  "author": "l0aft3r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/l0aft3r/restaurant-page-project/issues"
+  },
+  "homepage": "https://github.com/l0aft3r/restaurant-page-project#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
